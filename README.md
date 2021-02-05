@@ -1,4 +1,4 @@
-# devquotes
+# dummy
 
 ## Project setup
 ```
