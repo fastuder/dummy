@@ -1,8 +1,23 @@
+@import "./variables";
+
+@mixin flex-center($direction) {
+  dipslay: flex;
+  flex-direction: $direction;
+  justify-content: center;
+  align-items: center;
+}
+
 #app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: $fontColor;
-    margin-top: 60px;
-  }
+  @include flex-center(column);
+
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $fontColor;
+  margin-top: 60px;
+}
+
+.pokemon {
+  border: 2px solid $fontColor;
+  padding: 10px;
+}
